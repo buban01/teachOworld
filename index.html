@@ -3,53 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TeachOWorld</title>
-  <meta name="description" content="Level up your skills in web development, cloud, DevOps, and programming languages with hands-on training for young minds.">
-  <meta name="keywords" content="web development, AWS, Azure, DevOps, Python, C++, Java, programming, training, coding for students">
+  <title>Your Training Academy</title>
+  <meta name="description" content="Empowering young students with modern Web Development, Cloud (AWS, Azure), DevOps, C, C++, Java, Python, and automation skills!" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .accordion-button {
+      cursor: pointer;
+    }
+    .accordion-content {
+      display: none;
+    }
+    .accordion-content.active {
+      display: block;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-indigo-600 to-purple-800 text-gray-100 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- Hero Section -->
-  <section class="py-20 px-6 text-center">
-    <h1 class="text-5xl font-extrabold mb-4">Supercharge Your Coding Journey!</h1>
-    <p class="max-w-2xl mx-auto text-lg mb-8 text-purple-100">Master Web Development, Cloud, DevOps, and Programming Languages (C, C++, Java, Python) with our practical training courses tailored for young students.</p>
-    <a href="#services" class="inline-block bg-yellow-400 text-indigo-800 px-8 py-3 rounded-full font-semibold shadow hover:bg-yellow-300 transition">Explore Our Services</a>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-2">Your Training Academy</h1>
+      <p class="text-lg">Master Web Development, Cloud, DevOps, and Programming Languages</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="container mx-auto my-10 px-4 text-center">
+    <h2 class="text-2xl font-bold mb-4">Why Learn With Us?</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      We focus on practical, hands-on training for young students. Learn modern web development, explore the power of the cloud with AWS and Azure, and master programming languages like C, C++, Java, and Python — all under one roof!
+    </p>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-20 px-6 bg-white text-gray-800 rounded-t-3xl">
-    <h2 class="text-3xl font-bold text-center mb-10">What We Offer</h2>
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="bg-indigo-100 rounded-xl shadow p-6 hover:bg-indigo-200 transition">
-        <h3 class="text-xl font-bold mb-2">Web Development</h3>
-        <p>Build responsive, modern websites using HTML, CSS, JavaScript, and frameworks like React and Vue.</p>
+  <!-- Courses Section -->
+  <section class="container mx-auto my-10 px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center">Our Courses</h2>
+    <div class="space-y-4">
+      
+      <!-- Web Development -->
+      <div class="bg-white rounded shadow p-4">
+        <button class="accordion-button w-full text-left font-semibold text-blue-600 flex justify-between items-center">
+          <span>🌐 Web Development</span>
+          <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="accordion-content mt-2 text-gray-700">
+          <ul class="list-disc ml-6">
+            <li>HTML5 & CSS3 Basics</li>
+            <li>TailwindCSS for rapid design</li>
+            <li>JavaScript fundamentals</li>
+            <li>Building responsive projects</li>
+          </ul>
+        </div>
       </div>
-      <div class="bg-purple-100 rounded-xl shadow p-6 hover:bg-purple-200 transition">
-        <h3 class="text-xl font-bold mb-2">Cloud & DevOps</h3>
-        <p>Get hands-on with AWS, Azure, and DevOps tools to streamline deployments and build scalable apps.</p>
+
+      <!-- Cloud & DevOps -->
+      <div class="bg-white rounded shadow p-4">
+        <button class="accordion-button w-full text-left font-semibold text-purple-600 flex justify-between items-center">
+          <span>☁️ Cloud & DevOps</span>
+          <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="accordion-content mt-2 text-gray-700">
+          <ul class="list-disc ml-6">
+            <li>Cloud fundamentals (AWS & Azure)</li>
+            <li>AWS Hands-on labs (EC2, S3, IAM)</li>
+            <li>Azure basics</li>
+            <li>DevOps basics: CI/CD pipelines</li>
+          </ul>
+        </div>
       </div>
-      <div class="bg-yellow-100 rounded-xl shadow p-6 hover:bg-yellow-200 transition">
-        <h3 class="text-xl font-bold mb-2">Programming & Automation</h3>
-        <p>Sharpen your skills in C, C++, Java, and Python, including real-world Python automation projects.</p>
+
+      <!-- Programming Languages -->
+      <div class="bg-white rounded shadow p-4">
+        <button class="accordion-button w-full text-left font-semibold text-green-600 flex justify-between items-center">
+          <span>🖥️ Programming Languages</span>
+          <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="accordion-content mt-2 text-gray-700">
+          <ul class="list-disc ml-6">
+            <li>C & C++ basics and projects</li>
+            <li>Java OOP concepts</li>
+            <li>Python basics and practical use cases</li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Automation with Python -->
+      <div class="bg-white rounded shadow p-4">
+        <button class="accordion-button w-full text-left font-semibold text-yellow-600 flex justify-between items-center">
+          <span>⚙️ Automation with Python</span>
+          <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="accordion-content mt-2 text-gray-700">
+          <ul class="list-disc ml-6">
+            <li>Task automation (files, emails)</li>
+            <li>Web scraping basics</li>
+            <li>Mini automation project</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Contact Us -->
-  <section class="py-20 px-6 bg-gradient-to-br from-purple-600 to-indigo-700 text-center text-white">
-    <h2 class="text-3xl font-bold mb-6">Connect With Us</h2>
-    <p class="mb-6 max-w-md mx-auto">Have questions or want to enroll? Reach out directly on WhatsApp!</p>
-    <a href="https://wa.me/+918697889453" target="_blank" class="inline-flex items-center gap-2 bg-green-400 text-indigo-900 px-8 py-3 rounded-full font-semibold shadow hover:bg-green-300 transition">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.72 12.55l-4.3-4.3m0 0l-4.3 4.3m4.3-4.3v9.5" /></svg>
-      Chat on WhatsApp
+  <!-- WhatsApp Contact Button -->
+  <div class="fixed bottom-6 right-6">
+    <a href="https://wa.me/918697889453" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-600 transition">
+      💬 Chat on WhatsApp
     </a>
-  </section>
+  </div>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-4 text-center">
-    &copy; teachOworld. 
+  <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+    &copy; 2025 teachOworld. All rights reserved.
   </footer>
 
+  <script>
+    // Accordion toggle logic
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+    accordionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.classList.toggle('active');
+        button.querySelector('svg').classList.toggle('rotate-180');
+      });
+    });
+  </script>
 </body>
 </html>
